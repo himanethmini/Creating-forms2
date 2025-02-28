@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Creating Forms</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>Student Attendance Tracher</h1>
+
+        <form id="myform">
+          <label>Student ID</label>
+          <input type="text" name="stId" id="stId" />
+          <br />
+          <br />
+
+          <label>Student Name</label>
+          <input type="text" name="stNm" id="stNm" />
+          <br />
+          <br />
+
+          <label>Date of Attendence</label>
+          <input type="date" name="date" id="date" />
+          <br />
+          <br />
+          <label>Attendece Status</label>
+
+          <div>
+            <input
+              type="radio"
+              name="status"
+              value="Present"
+            />Present&nbsp;&nbsp;
+            <input
+              type="radio"
+              name="status"
+              value="Absent"
+            />Absent&nbsp;&nbsp;
+            <input type="radio" name="status" value="Late" />Late
+          </div>
+          <br />
+
+          <label>Remarks</label>
+          <input type="text" , name="remark" , id="remark" />
+          <br />
+          <br />
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
